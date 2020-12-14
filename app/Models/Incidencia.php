@@ -16,16 +16,7 @@ class Incidencia extends Model
      * @var array
      */
     protected $fillable = [
-        'idIncidencia', 'profesor', 'fecha', 'aula', 'codigo',
-    ];
-
-    /**
-     * The attributes that should be hidden for arrays.
-     *
-     * @var array
-     */
-    protected $hidden = [
-        'remember_token',
+        'user_id', 'fecha', 'aula', 'ordenador', 'estado'
     ];
 
     /**
@@ -37,7 +28,7 @@ class Incidencia extends Model
         'fecha' => 'datetime',
     ];
 
-    /*public function comments() {
+    public function comments() {
         return $this->belongsTo(User::class);
-    }*/
+    }
 }

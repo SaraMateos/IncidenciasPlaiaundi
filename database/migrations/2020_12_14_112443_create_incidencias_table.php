@@ -12,15 +12,16 @@ class CreateIncidenciasTable extends Migration {
      */
     public function up() {
         Schema::create('incidencias', function (Blueprint $table) {
-            $table->increments('idIncidencia');
-            $table->string('profesor');
+            $table->id();
+            $table->foreignId('user_id')
+            ->constrained('users')
+            ->onUpdate('cascade')
+            ->onDelete('cascade');
             $table->timestamp('fecha');
             $table->string('aula');
-            $table->string('codigo');
-            $table->rememberToken();
+            $table->string('ordenador');
+            $table->string('estado');
             $table->timestamps();
-
-            
         });
     }
 

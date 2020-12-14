@@ -1,0 +1,5 @@
+Pasos realizados
+
+1- Crear las tablas y modificar los modelos.
+2- Relación 1:N.
+3- Rule Email
