@@ -37,7 +37,7 @@ class Incidencia extends Model
         'fecha' => 'datetime',
     ];
 
-    public function comments() {
+    /*public function comments() {
         return $this->belongsTo(User::class);
-    }
+    }*/
 }
