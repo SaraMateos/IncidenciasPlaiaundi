@@ -19,9 +19,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
 
 
 //Incidencias
+Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'viewIncidencia'])->name('incidencias.verIncidencias');
+Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::class, 'addNewIncidencia'])->name('incidencias.nuevaIncidencia');
 //Route::get('/home/añadirIncidencia', [IncidenciaController::class, 'addIncidencia']);
 //Route::get('/home/añadir', [IncidenciaController::class, 'addIncidencia']);

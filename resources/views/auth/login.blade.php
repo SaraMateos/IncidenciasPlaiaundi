@@ -14,6 +14,7 @@
                         <div class="form-group row">
                             
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Correo Electronico') }}</label>
+                            <link href="{{ asset('images/usuario.png') }}" rel="stylesheet">
                             <!--img src="/images/usuario.png" alt="imgUsuario"/-->
 
                             <div class="col-md-6">
