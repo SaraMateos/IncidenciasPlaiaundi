@@ -2,4 +2,7 @@ Pasos realizados
 
 1- Crear las tablas y modificar los modelos.
 2- Relación 1:N.
-3- Rule Email
+3- Modificación de vistas.
+
+3- Crear controlador de Incidencias y Usuarios.
+4- Rule Email

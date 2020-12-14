@@ -20,3 +20,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+//Incidencias
+//Route::get('/home/añadirIncidencia', [IncidenciaController::class, 'addIncidencia']);
+//Route::get('/home/añadir', [IncidenciaController::class, 'addIncidencia']);
