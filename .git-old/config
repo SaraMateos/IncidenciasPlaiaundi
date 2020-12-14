@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:SaraMateos/18Trabajo.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "origin2"]
+	url = https://github.com/SaraMateos/18Trabajo.git
+	fetch = +refs/heads/*:refs/remotes/origin2/*
+[branch "master"]
+	remote = origin2
+	merge = refs/heads/master
