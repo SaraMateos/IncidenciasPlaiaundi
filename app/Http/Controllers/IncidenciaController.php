@@ -40,24 +40,21 @@ class IncidenciaController extends Controller {
         //Para guardar los datos en la tabla
         $incidencia = new Incidencia;
         
+        if /*(empty($request->user_id) ||*/(empty($request->fecha) || empty($request->aula) || mepty($request->ordenador)  || empty($request->estado)) {
+            $request->session()->flash('alert-danger', 'No se ha podido añadir la incidencia!');
+        }  else {
+            //$incidencia->user_id = $request->user_id;
+            $incidencia->fecha = $request->fecha;
+            $incidencia->aula = $request->aula;
+            $incidencia->ordenador = $request->ordenador;
+            $incidencia->estado = $request->estado;
+  
+            $incidencia->save();
+            if ($incidencia->save()) {
+                $request->session()->flash('alert-success', 'La incidencia se ha añadido correctamente!');
+            }
+          }
+          return back();
     }
 
-    /*public function addIncidencia() {
-        
-        $incidencia = new Incidencia();
-
-        $incidencia->save();
-        return "Se ha creado la incidencia";
-
-    }
-
-    public function addUser($id) {
-        
-        $incidencia = Incidencia::find($id);
-        $user = new User();
-
-        $incidencia->comments()->save('$user');
-        return "Comment has been posted";
-
-    }*/
 }
