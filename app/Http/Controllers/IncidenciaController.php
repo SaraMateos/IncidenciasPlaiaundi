@@ -17,7 +17,7 @@ class IncidenciaController extends Controller {
         return view('incidencias.nuevaIncidencia');
     }
 
-    //Comprobras que lo introducido en el formulario no da ningun error y en caso de que este bien lo guardara en la base de datos
+    //Comprueba que lo introducido en el formulario no da ningun error y en caso de que este bien lo guardara en la base de datos
     public function store(Request $request) {
 
         //Comprobar que se cumplen los requisitos
@@ -27,14 +27,14 @@ class IncidenciaController extends Controller {
             'estado' => ['required']
         ]);
 
-        if ($valdiator-> fails()) {
+        if ($validator-> fails()) {
             return redirect('/incidencias/añadir')
                         ->withErrors($validator)
                         ->withInput();
         }
 
         $messages = [
-            'required' => 'El :attribute es necesarrio'
+            'required' => 'El :attribute es necesario'
         ];
 
         //Para guardar los datos en la tabla
