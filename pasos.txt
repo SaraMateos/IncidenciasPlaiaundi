@@ -27,6 +27,8 @@ Pasos realizados
 
 
 
+1- MIRAR LOS LINKS DEL ROLE DE ADMIN Y EL SOCIALITE
+
 
 3- Creado el controlador de Usuarios.
 4- Rule Email
