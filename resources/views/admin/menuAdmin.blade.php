@@ -35,11 +35,12 @@
                     <ul class="navbar-nav mr-auto">
                         <!--COLOCAR AQUI LOS LINKS DE LAS INCIDENCIAS -->
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Inicio</a>
+                            <a class="nav-link" href="{{ route('homeAdmin') }}">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('incidencias.verIncidencias') }}">{{ __('Ver incidencias') }}</a>
+                            <a class="nav-link" href="{{ route('admin.verInciAdmin') }}">{{ __('Ver incidencias') }}</a>
                         </li>
+                       
                     </ul>
 
                     <!-- Right Side Of Navbar -->

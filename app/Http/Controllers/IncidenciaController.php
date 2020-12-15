@@ -8,13 +8,26 @@ use App\Models\User;
 
 class IncidenciaController extends Controller {
 
-    //Mostras las distintas vistas de incidencias
+    //Mostras las distintas vistas de incidencias USUARIO NORMAL
     public function viewIncidencia() {
         return view('incidencias.verIncidencias');
     }
 
     public function addNewIncidencia() {
         return view('incidencias.nuevaIncidencia');
+    }
+
+    public function editIncidencias() {
+        return view('incidencias.nuevaIncidencia');
+    }
+
+    //Mostras las distintas vistas de incidencias ADMIN
+    public function viewInciAdmin() {
+        return view('admin.verInciAdmin');
+    }
+
+    public function editInciAdmin() {
+        return view('admin.modInciAdmin');
     }
 
     //Comprueba que lo introducido en el formulario no da ningun error y en caso de que este bien lo guardara en la base de datos

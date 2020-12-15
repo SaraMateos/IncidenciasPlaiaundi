@@ -21,8 +21,15 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
+
+    //Muestra el home de un usuario NORMAL
     public function inicio() {
         return view('home');
+    }
+
+    //Muestra el home de un usuario ADMIN
+    public function iniAdmin() {
+        return view('admin.homeAdmin');
     }
 
 }

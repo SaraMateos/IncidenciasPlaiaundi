@@ -19,12 +19,15 @@ Route::get('/', function () {
 
 Auth::routes();
 
+//Home
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
 Route::get('/homeAdmin', [App\Http\Controllers\HomeController::class, 'iniAdmin'])->name('homeAdmin');
 
-
-//Incidencias
+//Incidencias usuario normal
 Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'viewIncidencia'])->name('incidencias.verIncidencias');
 Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::class, 'addNewIncidencia'])->name('incidencias.nuevaIncidencia');
-//Route::get('/home/añadirIncidencia', [IncidenciaController::class, 'addIncidencia']);
-//Route::get('/home/añadir', [IncidenciaController::class, 'addIncidencia']);
+Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
+
+//Incidencias admin
+Route::get('/inciAdmin', [App\Http\Controllers\IncidenciaController::class, 'viewInciAdmin'])->name('admin.verInciAdmin');
+Route::get('/inciAdmin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editInciAdmin'])->name('admin.modInciAdmin');

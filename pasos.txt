@@ -1,16 +1,33 @@
 Pasos realizados
 
-1- Crear las tablas y modificar los modelos.
+1- Crear las tablas y modificados los modelos.
 2- Relación 1:N.
 3- Modificación de vistas.
-5- Creado el menu.blade.php que modificar el menu para que solo salga al iniciar sesion y muestre el inicio y los distintos casos de uso para las incidencias.
-6- Creado el controlador de Incidencias para que muestre las vistas de incidencias
-7- Agregadas las rutas de los respectivos formularios en web.php
-8- Creada la vista para el mensaje de errores
-9- FALTA TERMINAR Modificada la vista de nueva incidencia
-10- Modificado el contronlador de Incidencias creando el validator para comprobar los datos del formulario de incidencias y para introducir los datos en la tabla.
-11- Creado el middleware del admin para saber si es admin o no, añadida la ruta para el admin, modificada la vista del homeAdmin y creado un menu para el admin.
+5- Creado el menu.blade.php que modifica el menu para que solo salga al iniciar sesion y muestre el inicio y los distintos casos de uso para las incidencias.
+6- Creado el controlador de Incidencias para que muestre las vistas de incidencias y creado el validator para combrobar los datos del formulario de incidencias 
+    para introducir los datos en la tabla.
+7- Agregadas las rutas de los respectivos formularios en web.php, tanto incidencias como home.
+8- Creada la vista para el mensaje de errores.
+9- Creadas las vistas de las incidencias.
+10- FALTA TERMINAR LA VISTAS DE INCIDENCIAS.
+11- HACIENDO Creado el middleware del admin para saber si es admin o no, añadida la ruta para el admin en web.php,
+    modificadas todas las vista para un usuario admin. (Menu, home, incidencias y web)
+12- Modificado el HomeController para que muestre el home del admin.
+13- 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 3- Creado el controlador de Usuarios.
 4- Rule Email
-10- FALTA MODIFICAR la vista de login añadiendo los iconos.
+10- FALTA MODIFICAR la vista de login añadiendo los iconos
