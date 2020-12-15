@@ -20,6 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
+Route::get('/homeAdmin', [App\Http\Controllers\HomeController::class, 'iniAdmin'])->name('homeAdmin');
 
 
 //Incidencias

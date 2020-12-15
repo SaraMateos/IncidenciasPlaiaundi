@@ -8,9 +8,9 @@ Pasos realizados
 7- Agregadas las rutas de los respectivos formularios en web.php
 8- Creada la vista para el mensaje de errores
 9- FALTA TERMINAR Modificada la vista de nueva incidencia
-10- FALTA MODIFICAR la vista de login.
 10- Modificado el contronlador de Incidencias creando el validator para comprobar los datos del formulario de incidencias y para introducir los datos en la tabla.
-11- MODIFICANDO El controlador del User
+11- Creado el middleware del admin para saber si es admin o no, añadida la ruta para el admin, modificada la vista del homeAdmin y creado un menu para el admin.
 
 3- Creado el controlador de Usuarios.
-4- Rule  Email
+4- Rule Email
+10- FALTA MODIFICAR la vista de login añadiendo los iconos.
