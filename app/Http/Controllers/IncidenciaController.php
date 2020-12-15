@@ -10,7 +10,9 @@ class IncidenciaController extends Controller {
 
     //Mostras las distintas vistas de incidencias USUARIO NORMAL
     public function viewIncidencia() {
-        return view('incidencias.verIncidencias');
+
+        $incidencias = Incidencia::all();
+        return view('incidencias.verIncidencias', ['incidencia' => $incidencias->toArray()]);
     }
 
     public function addNewIncidencia() {
@@ -39,6 +41,9 @@ class IncidenciaController extends Controller {
             'ordenador' => ['required'],
             'estado' => ['required']
         ]);
+
+        /*Incidencia::create($request->all());
+        return redirect(/verIncidencias);*/
 
         if ($validator-> fails()) {
             return redirect('/incidencias/añadir')

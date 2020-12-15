@@ -14,18 +14,11 @@ Pasos realizados
     modificadas todas las vista para un usuario admin. (Menu, home, incidencias y web)
 12- Modificado el HomeController para que muestre el home del admin.
 
-13- Empezando a configurar el socialite
+13- NO TERMINADO Empezando a configurar el socialite
     Tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
 
-
-
-
-
-
-
-
-
-
+14- EMPEZADO visualizar la tabla de incidencias
+    https://desarrolloweb.com/articulos/practica-acceso-base-datos-laravel.html
 
 
 

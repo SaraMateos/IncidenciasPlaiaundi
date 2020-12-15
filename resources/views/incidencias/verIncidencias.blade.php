@@ -14,7 +14,12 @@
                         </div>
                     @endif
 
-                    {{ __('Tabla de incidencias') }}
+                    <table>
+                        <thead>https://laraveles.com/foro/viewtopic.php?id=1387
+                    </table>
+                    @foreach ($incidencias as $incidencia) 
+
+                    @endforeach
                 </div>
             </div>
         </div>
