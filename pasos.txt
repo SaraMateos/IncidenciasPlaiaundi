@@ -17,10 +17,9 @@ Pasos realizados
 15- Verificacion del email hecha y solucionado el error con el link https://github.com/EddieJaoudeCommunity/support/issues/34
 
 
-
-13- NO TERMINADO Empezando a configurar el socialite
-    Tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
-1- MIRAR LOS LINKS DEL ROLE DE ADMIN Y EL SOCIALITE
-3- Creado el controlador de Usuarios.
-4- Rule Email
-10- FALTA MODIFICAR la vista de login añadiendo los iconos
+COSAS QUE FALTAN POR HACER
+- SOCIALITE tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
+        Paso de crear el proyecto
+        
+- MIRAR LOS LINKS DEL ROLE DE ADMIN
+- Rule Email
