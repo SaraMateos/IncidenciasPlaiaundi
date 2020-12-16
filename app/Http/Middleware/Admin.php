@@ -21,7 +21,7 @@ class Admin
         $admin = ($user->es_admin);
 
         if ($admin == 1) {
-            return view('homeAdmin');
+            return redirect('homeAdmin');
         }
 
         return $next($request);

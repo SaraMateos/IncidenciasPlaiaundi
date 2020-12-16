@@ -14,7 +14,11 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    @if(Auth::user()->hasRole('admin'))
+                        <div>Acceso como administrador</div>
+                    @else
+                        <div>Acceso usuario</div>
+                    @endifYou are logged in!
                 </div>
             </div>
         </div>
