@@ -1,76 +1,78 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="/css/estiloLR.css" rel="stylesheet">
+
 <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+    <div class="row text-center">
+        <div class="col-md-12 login-form">           
+            <form method="POST" action="{{ route('register') }}">
+                @csrf
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                <div class="row">
+                    <div class="col-md-12 login-form-imagen">
+                        <img src="images/agregarUsuario.png" id="imgUsuario"/>
+                    </div>
                 </div>
-            </div>
+
+                <div class="row">
+                    <div class="col-md-12 login-form-header">
+                        <p class="login-form-font-header">Registro<span>Usuario</span><p>
+                    </div>
+				</div>	
+
+                <div class="form-group row">
+                    <div class="ml-5 mr-5 col-md-11 login-from-row">
+                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" autocomplete="name" autofocus placeholder="Nombre" size="25" required> 
+                        @error('name')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="ml-5 mr-5 col-md-11 login-from-row">
+                        <input id="email" name="email" type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Correo electronico" value="{{ old('email') }}" required autocomplete="email">
+                         @error('email')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="ml-5 mr-5 col-md-11 login-from-row">
+                        <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="Contraseña" required autocomplete="new-password">
+
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="ml-5 mr-5 col-md-11 login-from-row">
+                        <input id="password-confirm" name="password_confirmation" type="password" class="form-control" placeholder="Confirmar contraseña" required autocomplete="new-password">
+
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                            @enderror
+                    </div>
+                </div>
+
+                <div class="form-group row mb-0">
+                    <div class="col-md-12 login-from-boton">
+                        <button type="submit" class="btn btn-primary"> {{ __('Registrarse') }} </button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </div>

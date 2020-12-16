@@ -1,6 +1,8 @@
 @extends('admin.menuAdmin')
 
 @section('content')
+<link href="/css/tabla.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -14,7 +16,7 @@
                         </div>
                     @endif
 
-                    <table border="1" width="1000">
+                    <table border="1" width="1000" class="listaIncidencias">
                         <thead>
                             <th>ID</th>
                             <th>USER_ID</th>

@@ -1,9 +1,11 @@
 @extends('layouts.menu')
 
 @section('content')
+<link href="/css/tabla.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <div class="card">
                 <div class="card-header">{{ __('Lista de incidencias') }}</div>
 
@@ -14,7 +16,7 @@
                         </div>
                     @endif
 
-                    <table border="1" width="1000">
+                    <table border="1" width="1000" class="listaIncidencias">
                         <thead>
                             <th>ID</th>
                             <th>USER_ID</th>
@@ -33,7 +35,7 @@
                                 <td>{{ $incidencia->fecha }}</td>
                                 <td>{{ $incidencia->aula }}</td>
                                 <td>{{ $incidencia->ordenador }}</td>
-                                <td>{{ $incidencia->descripcion }}</td>
+                                <td>{{ $incidencia->descripción }}</td>
                                 <td>{{ $incidencia->estado }}</td>
                                 <td><a href="#"> Modificar </a></td>
                             </tr>

@@ -1,0 +1,46 @@
+.login-form {
+    box-shadow: 0 0 27px 0 rgba(84, 84, 84, 0.62);
+}
+
+#imgUsuario {
+    margin-top: 50px;
+}
+  
+.login-form-header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.login-form-font-header {
+    font-size: 30px; 
+    font-weight: bold;
+}
+  
+.login-form-font-header span {
+    margin-top: 10px;
+    color: #007C9B;
+}
+  
+.login-from-row {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login-from-boton {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.or-seperator {
+    margin: 25px 0 5px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.or-seperator i {
+    padding: 0 10px;
+    background: #ffff;
+    position: relative;
+    top: -11px;
+    z-index: 1;
+}

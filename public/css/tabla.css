@@ -1,0 +1,33 @@
+.listaIncidencias {
+    font-family: Georgia, serif;
+    border: 3px solid #24943A;
+    background-color: #D4EED1;
+    width: 100%;
+    text-align: center;
+}
+
+.listaIncidencias td,  .listaIncidencias th {
+    border: 2px solid #24943A;
+    padding: 3px 10px;
+}
+
+.listaIncidencias tbody td {
+    font-size: 13px;
+}
+
+.listaIncidencias thead {
+    background: #24943A;
+    border-bottom: 0px solid #444444;
+}
+
+.listaIncidencias thead th {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F0F0F0;
+    text-align: center;
+    border-left: 2px solid #24943A;
+}
+
+.listaIncidencias thead th:first-child {
+    border-left: none;
+}

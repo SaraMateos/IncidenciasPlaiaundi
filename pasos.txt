@@ -9,21 +9,18 @@ Pasos realizados
 7- Agregadas las rutas de los respectivos formularios en web.php, tanto incidencias como home.
 8- Creada la vista para el mensaje de errores.
 9- Creadas las vistas de las incidencias.
-10- FALTA TERMINAR LA VISTAS DE INCIDENCIAS.
 11- HACIENDO Creado el middleware del admin para saber si es admin o no, añadida la ruta para el admin en web.php,
     modificadas todas las vista para un usuario admin. (Menu, home, incidencias y web)
 12- Modificado el HomeController para que muestre el home del admin.
+13- Visualizar la tabla de incidencias en el formulario tanto usuario normal como admin.
+14- Vistas de Logi, register y ver incidencias modificdas.
+
+
+
 
 13- NO TERMINADO Empezando a configurar el socialite
     Tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
-
-14- Visualizar la tabla de incidencias en el formualrio tanto usuario normal como admin. FALTA DARLE ESTILO
-
-
-
 1- MIRAR LOS LINKS DEL ROLE DE ADMIN Y EL SOCIALITE
-
-
 3- Creado el controlador de Usuarios.
 4- Rule Email
 10- FALTA MODIFICAR la vista de login añadiendo los iconos
