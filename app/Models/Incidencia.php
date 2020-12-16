@@ -30,7 +30,5 @@ class Incidencia extends Model
 
     public function comments() {
         return $this->belongsTo(User::class);
-    }
-
-        
+    }    
 }

@@ -29,5 +29,5 @@ Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::c
 Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
 
 //Incidencias admin
-Route::get('/inciAdmin', [App\Http\Controllers\IncidenciaController::class, 'viewInciAdmin'])->name('admin.verInciAdmin');
+Route::get('/inciAdmin', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');
 Route::get('/inciAdmin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editInciAdmin'])->name('admin.modInciAdmin');

@@ -17,7 +17,7 @@ Pasos realizados
 13- NO TERMINADO Empezando a configurar el socialite
     Tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
 
-14- Visualizar la tabla de incidencias en el formualrio. FALTA DARLE ESTILO
+14- Visualizar la tabla de incidencias en el formualrio tanto usuario normal como admin. FALTA DARLE ESTILO
 
 
 

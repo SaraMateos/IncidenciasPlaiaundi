@@ -66,12 +66,21 @@ class IncidenciaController extends Controller {
           return back();
     }
 
-    //Funcion que muestra la lista de usuarios
+    //Funcion que muestra la lista de incidencias para el usuario normal
     public function createList() {
         
         $incidencia = new Incidencia;
         $incidencia = Incidencia::all();
         return view('incidencias.verIncidencias', ['incidencias' => $incidencia]);
+
+    }
+
+    //Funcion que muestra la lista de incidencias para el admin
+    public function createListAdmin() {
+        
+        $incidencia = new Incidencia;
+        $incidencia = Incidencia::all();
+        return view('admin.verInciAdmin', ['incidencias' => $incidencia]);
         
     }
 
