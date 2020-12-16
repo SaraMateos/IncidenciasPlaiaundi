@@ -1,6 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Auth\EmailVerificationRequest;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 
 //Home
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
@@ -31,3 +34,7 @@ Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController
 //Incidencias admin
 Route::get('/inciAdmin', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');
 Route::get('/inciAdmin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editInciAdmin'])->name('admin.modInciAdmin');
+
+Route::get('/email/verify/', function () {
+    return view('auth.verify');
+})->middleware('auth')->name('verification.notice');

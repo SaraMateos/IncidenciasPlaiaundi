@@ -14,7 +14,7 @@ Pasos realizados
 12- Modificado el HomeController para que muestre el home del admin.
 13- Visualizar la tabla de incidencias en el formulario tanto usuario normal como admin.
 14- Vistas de Logi, register y ver incidencias modificdas.
-
+15- Verificacion del email hecha y solucionado el error con el link https://github.com/EddieJaoudeCommunity/support/issues/34
 
 
 
