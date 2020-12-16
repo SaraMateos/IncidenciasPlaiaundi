@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Incidencia extends Model
 {
 
-    use HasFactory, Notifiable;
+    use HasFactory;
 
     /**
      * The attributes that are mass assignable.
@@ -16,7 +16,7 @@ class Incidencia extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'fecha', 'aula', 'ordenador', 'estado'
+        'user_id', 'fecha', 'aula', 'ordenador', 'descripcion', 'estado'
     ];
 
     /**
@@ -32,9 +32,5 @@ class Incidencia extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function crear() {
-        Incidencia::create($request->all());
-    }
-
-    
+        
 }

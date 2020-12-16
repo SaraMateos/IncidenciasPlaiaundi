@@ -24,7 +24,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->nam
 Route::get('/homeAdmin', [App\Http\Controllers\HomeController::class, 'iniAdmin'])->name('homeAdmin');
 
 //Incidencias usuario normal
-Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'viewIncidencia'])->name('incidencias.verIncidencias');
+Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createList'])->name('incidencias.verIncidencias');
 Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::class, 'addNewIncidencia'])->name('incidencias.nuevaIncidencia');
 Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
 

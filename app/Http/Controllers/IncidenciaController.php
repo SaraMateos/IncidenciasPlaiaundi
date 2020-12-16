@@ -9,12 +9,6 @@ use App\Models\User;
 class IncidenciaController extends Controller {
 
     //Mostras las distintas vistas de incidencias USUARIO NORMAL
-    public function viewIncidencia() {
-
-        $incidencias = Incidencia::all();
-        return view('incidencias.verIncidencias', ['incidencia' => $incidencias->toArray()]);
-    }
-
     public function addNewIncidencia() {
         return view('incidencias.nuevaIncidencia');
     }
@@ -41,9 +35,6 @@ class IncidenciaController extends Controller {
             'ordenador' => ['required'],
             'estado' => ['required']
         ]);
-
-        /*Incidencia::create($request->all());
-        return redirect(/verIncidencias);*/
 
         if ($validator-> fails()) {
             return redirect('/incidencias/añadir')
@@ -73,6 +64,15 @@ class IncidenciaController extends Controller {
             }
           }
           return back();
+    }
+
+    //Funcion que muestra la lista de usuarios
+    public function createList() {
+        
+        $incidencia = new Incidencia;
+        $incidencia = Incidencia::all();
+        return view('incidencias.verIncidencias', ['incidencias' => $incidencia]);
+        
     }
 
 }

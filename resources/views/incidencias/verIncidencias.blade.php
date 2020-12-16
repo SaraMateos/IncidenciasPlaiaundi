@@ -14,12 +14,33 @@
                         </div>
                     @endif
 
-                    <table>
-                        <thead>https://laraveles.com/foro/viewtopic.php?id=1387
+                    <table border="1" width="1000">
+                        <thead>
+                            <th>ID</th>
+                            <th>USER_ID</th>
+                            <th>FECHA</th>
+                            <th>AULA</th>
+                            <th>ORDENADOR</th>
+                            <th>DESCRIPCION</th>
+                            <th>ESTADO</th>
+                            <th></th>
+                        </thead>
+                        <tbody>
+                            @foreach ($incidencias as $incidencia)
+                            <tr>
+                                <td>{{ $incidencia->id }}</td>
+                                <td>{{ $incidencia->user_id }}</td>
+                                <td>{{ $incidencia->fecha }}</td>
+                                <td>{{ $incidencia->aula }}</td>
+                                <td>{{ $incidencia->ordenador }}</td>
+                                <td>{{ $incidencia->descripcion }}</td>
+                                <td>{{ $incidencia->estado }}</td>
+                                <td><a href="#"> Modificar </a></td>
+                            </tr>
+                            @endforeach
+                        </tbody>
                     </table>
-                    @foreach ($incidencias as $incidencia) 
-
-                    @endforeach
+                    
                 </div>
             </div>
         </div>
