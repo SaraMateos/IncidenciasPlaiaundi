@@ -4,7 +4,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +29,10 @@ Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHom
 Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createList'])->name('incidencias.verIncidencias');
 Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::class, 'addNewIncidencia'])->name('incidencias.nuevaIncidencia');
 Route::post('/incidencias/añadido', [App\Http\Controllers\IncidenciaController::class, 'store']);
-Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
+Route::get('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'show'])->name('incidencias.modIncidencia');
+Route::post('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'update'])->name('incidencias.editIncidencia');
+Route::get('/incidencias/modificar/{id}/edit', [App\Http\Controllers\IncidenciaController::class, 'edit'])->name('incidencias.editIncidencia');;
+Route::get('/incidencias/eliminar', [App\Http\Controllers\IncidenciasController::class, 'delete'])->name('incidencias.modIncidencia');
 
 //Incidencias admin
 Route::get('/admin/verLista', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');

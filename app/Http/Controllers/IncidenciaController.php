@@ -17,7 +17,7 @@ class IncidenciaController extends Controller {
     }
 
     public function editIncidencias() {
-        return view('incidencias.nuevaIncidencia');
+        return view('incidencias.modIncidencia');
     }
 
     //Mostras las distintas vistas de incidencias ADMIN
@@ -78,6 +78,37 @@ class IncidenciaController extends Controller {
 
     }
 
+    //Funcion para actualizar una incidencia
+    public function show($id) {
+
+        $incidencia = Incidencia::findOrFail($id);
+        return view("incidencias.modIncidencia", compact("incidencia"));
+
+    }
+
+    public function edit($id) {
+
+        $incidencia = Incidencia::findOrFail($id);
+        return view("incidencias.editIncidencia", compact("incidencia"));
+
+    }
+
+    public function update(Request $request, $id) {
+
+        $incidencia = Incidencia::findOrFail($id);
+        $incidencia->update($request->all());
+        return redirect('/incidencias');
+
+    }
+
+    //Funcion para eliminar una incidencia
+    public function destroy() {
+
+        $incidencia = Incidencia::findOrFail($id);
+        $incidencia->delete();
+        return redirect("/incidencias");
+    }
+
     //Funcion que muestra la lista de incidencias para el admin
     public function createListAdmin() {
         
@@ -86,5 +117,7 @@ class IncidenciaController extends Controller {
         return view('admin.verInciAdmin', ['incidencias' => $incidencia]);
         
     }
+
+    
 
 }
