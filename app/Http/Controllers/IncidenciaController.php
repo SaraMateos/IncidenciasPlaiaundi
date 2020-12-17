@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Schema;
+
 use Illuminate\Http\Request;
 use App\Models\Incidencia;
 use App\Models\User;
@@ -30,26 +33,26 @@ class IncidenciaController extends Controller {
     public function store(Request $request) {
 
         //Comprobar que se cumplen los requisitos
-        $validator = Validatos::make($request->all(), [
+        $validator = Validator::make($request->all(), [
             'aula' => ['required'],
             'ordenador' => ['required'],
-            'estado' => ['required']
+            'descripcion' => ['required']
         ]);
 
         if ($validator-> fails()) {
-            return redirect('/incidencias/añadir')
+            return redirect('/incidencias')
                         ->withErrors($validator)
                         ->withInput();
         }
 
         $messages = [
-            'required' => 'El :attribute es necesario'
+            'required' => 'El :attribute es necesario.'
         ];
 
         //Para guardar los datos en la tabla
         $incidencia = new Incidencia;
         
-        if  (empty($request->fecha) || empty($request->aula) || mepty($request->ordenador)  || empty($request->estado)) {
+        if  (empty($request->aula) || empty($request->ordenador)  || empty($request->descripcion)) {
             $request->session()->flash('alert-danger', 'No se ha podido añadir la incidencia!');
         }  else {
             $incidencia->user_id = auth()->user()->id;

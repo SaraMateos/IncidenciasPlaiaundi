@@ -21,7 +21,7 @@ class CreateIncidenciasTable extends Migration {
             $table->string('aula');
             $table->string('ordenador');
             $table->string('descripcion')->nullable();
-            $table->string('estado');
+            $table->string('estado')->default('PENDIENTE');
             $table->timestamps();
         });
     }

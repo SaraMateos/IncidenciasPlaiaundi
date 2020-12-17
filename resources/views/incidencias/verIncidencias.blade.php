@@ -35,7 +35,7 @@
                                 <td>{{ $incidencia->fecha }}</td>
                                 <td>{{ $incidencia->aula }}</td>
                                 <td>{{ $incidencia->ordenador }}</td>
-                                <td>{{ $incidencia->descripción }}</td>
+                                <td>{{ $incidencia->descripcion }}</td>
                                 <td>{{ $incidencia->estado }}</td>
                                 <td><a href="#"> Modificar </a></td>
                             </tr>

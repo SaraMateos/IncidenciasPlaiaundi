@@ -42,25 +42,33 @@
                     @endif
 
                     <!-- Formulario -->
-                    <form class="my-3" method="post" action="{{url('guardarAlumno')}}">
+                    <form class="my-3" method="post" action="{{url('/incidencias/añadido')}}">
                         @csrf
                         @include('incidencias.errores')
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" value="{{ old('nombre') }}">
+                            <label>¿En qué aula ocurre está el problema?</label>
+                                <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ old('aula') }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Email:</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" value="{{ old('email') }}">
+                                <label>¿Qué HZ tiene el ordenador?</label>
+                                <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ old('ordenador') }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label>Descripción el problema:</label>
+                                <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ old('descripcion') }}">
                             </div>
                         </div>
 
                         <div>
-                            <input type="reset" value="Borrar">
+                            <input type="reset" value="Reiniciar">
                             <input type="submit" value="Enviar">
                             <br><br>
                             <a href="/incidencias"><input type="button" value="Volver"></a>
