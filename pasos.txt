@@ -15,6 +15,9 @@ Pasos realizados
 13- Visualizar la tabla de incidencias en el formulario tanto usuario normal como admin.
 14- Vistas de Logi, register y ver incidencias modificdas.
 15- Verificacion del email hecha y solucionado el error con el link https://github.com/EddieJaoudeCommunity/support/issues/34
+16- Multiauth que redirigue a distintos homes. https://www.itsolutionstuff.com/post/laravel-8-multi-auth-authentication-tutorialexample.html
+
+
 
 
 COSAS QUE FALTAN POR HACER
@@ -22,10 +25,6 @@ COSAS QUE FALTAN POR HACER
         Paso de crear el proyecto
 
 - CREAR FORMULARIOS DE MODIFICAR Y AÑADIR
-
-- MULTIAUTH
-    https://www.itsolutionstuff.com/post/laravel-8-multi-auth-authentication-tutorialexample.html
-    mirar el metodo attemp en la version 1.5.4 y mirar si funciona
 
 - RULE DEL Email  
     hay un ejercicio en el que esta hecho

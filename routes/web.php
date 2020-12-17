@@ -24,7 +24,7 @@ Auth::routes(['verify' => true]);
 
 //Home
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
-Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.homeAdminn')->middleware('is_admin');
+Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.homeAdmin')->middleware('is_admin');
 
 //Incidencias usuario normal
 Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createList'])->name('incidencias.verIncidencias');
@@ -32,8 +32,8 @@ Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::c
 Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
 
 //Incidencias admin
-Route::get('/inciAdmin', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');
-Route::get('/inciAdmin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editInciAdmin'])->name('admin.modInciAdmin');
+Route::get('/admin/verLista', [App\Http\Controllers\IncidenciaController::class, 'viewAdmin'])->name('admin.verInciAdmin');
+Route::get('/admin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editAdmin'])->name('admin.modInciAdmin');
 
 Route::get('/email/verify/', function () {
     return view('auth.verify');

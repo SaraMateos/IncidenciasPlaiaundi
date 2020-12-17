@@ -20,7 +20,7 @@ class CreateIncidenciasTable extends Migration {
             $table->timestamp('fecha');
             $table->string('aula');
             $table->string('ordenador');
-            $table->string('descripcion');
+            $table->string('descripcion')->nullable();
             $table->string('estado');
             $table->timestamps();
         });

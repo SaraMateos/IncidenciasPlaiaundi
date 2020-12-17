@@ -18,11 +18,11 @@ class IncidenciaController extends Controller {
     }
 
     //Mostras las distintas vistas de incidencias ADMIN
-    public function viewInciAdmin() {
+    public function viewAdmin() {
         return view('admin.verInciAdmin');
     }
 
-    public function editInciAdmin() {
+    public function editAdmin() {
         return view('admin.modInciAdmin');
     }
 
