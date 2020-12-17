@@ -23,25 +23,13 @@ class HomeController extends Controller
      */
 
     //Muestra el home de un usuario NORMAL
-   /* public function inicio() {
-        return view('home');
-    }*/
-
-    //Muestra el home de un usuario ADMIN
-    /*public function iniAdmin() {
-        return view('admin.homeAdmin');
-    }*/
-
-    public function inicio(Request $request)
-    {
-        $request->user()->authorizeRoles(['user', 'admin']);        
-        
+    public function inicio() {
         return view('home');
     }
 
-    public function iniAdmin(Request $request) {
-        $request->user()->authorizeRoles('admin');
-        return view('some.view');
+    //Muestra el home de un usuario ADMIN
+    public function adminHome() {
+        return view('admin.homeAdmin');
     }
 
 }

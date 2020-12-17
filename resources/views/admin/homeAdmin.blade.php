@@ -14,7 +14,7 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    {{ __('You are logged in! Eres un ADMIN') }}
                 </div>
             </div>
         </div>

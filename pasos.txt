@@ -23,9 +23,9 @@ COSAS QUE FALTAN POR HACER
 
 - CREAR FORMULARIOS DE MODIFICAR Y AÑADIR
 
-- MIRAR LOS LINKS DEL ROLE DE ADMIN
-    creado middleare del admin
-    mirar video sobre rules en barra de marcadores
+- MULTIAUTH
+    https://www.itsolutionstuff.com/post/laravel-8-multi-auth-authentication-tutorialexample.html
+    mirar el metodo attemp en la version 1.5.4 y mirar si funciona
 
 - RULE DEL Email  
     hay un ejercicio en el que esta hecho

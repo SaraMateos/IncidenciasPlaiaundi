@@ -14,11 +14,8 @@
                         </div>
                     @endif
 
-                    @if(Auth::user()->hasRole('admin'))
-                        <div>Acceso como administrador</div>
-                    @else
-                        <div>Acceso usuario</div>
-                    @endifYou are logged in!
+                    
+            You are logged in! eRES UN USER
                 </div>
             </div>
         </div>
