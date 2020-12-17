@@ -32,7 +32,7 @@ Route::get('/incidencias/añadir', [App\Http\Controllers\IncidenciaController::c
 Route::get('/incidencias/modificar', [App\Http\Controllers\IncidenciasController::class, 'editIncidencia'])->name('incidencias.modIncidencia');
 
 //Incidencias admin
-Route::get('/admin/verLista', [App\Http\Controllers\IncidenciaController::class, 'viewAdmin'])->name('admin.verInciAdmin');
+Route::get('/admin/verLista', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');
 Route::get('/admin/modificar', [App\Http\Controllers\IncidenciaController::class, 'editAdmin'])->name('admin.modInciAdmin');
 
 Route::get('/email/verify/', function () {

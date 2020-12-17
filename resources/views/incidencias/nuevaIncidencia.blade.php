@@ -48,7 +48,6 @@
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Nombre:</label>
                                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" value="{{ old('nombre') }}">
                             </div>
                         </div>

@@ -16,15 +16,14 @@ Pasos realizados
 14- Vistas de Logi, register y ver incidencias modificdas.
 15- Verificacion del email hecha y solucionado el error con el link https://github.com/EddieJaoudeCommunity/support/issues/34
 16- Multiauth que redirigue a distintos homes. https://www.itsolutionstuff.com/post/laravel-8-multi-auth-authentication-tutorialexample.html
+17- Rule para el Email
 
 
 
-
-COSAS QUE FALTAN POR HACER
+COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - SOCIALITE tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
         Paso de crear el proyecto
 
 - CREAR FORMULARIOS DE MODIFICAR Y AÑADIR
 
-- RULE DEL Email  
-    hay un ejercicio en el que esta hecho
+- Mandar un email al crear la incidencia
