@@ -65,6 +65,10 @@
 				height: 18px; 
 				width: 60px;
             }
+
+            .home:hover {
+                color: green;
+            }
             
             .fondo {
                 background-color: #eef2db;
