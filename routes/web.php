@@ -22,8 +22,8 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 //Home
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
-Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.homeAdmin')->middleware('is_admin');
+Route::get('/incidencias', [App\Http\Controllers\HomeController::class, 'inicio']);
+Route::get('/admin/incidencias', [App\Http\Controllers\HomeController::class, 'adminHome'])->middleware('is_admin');
 
 //Incidencias usuario normal
 Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createList'])->name('incidencias.verIncidencias');
@@ -35,11 +35,11 @@ Route::get('/incidencias/modificar/{id}/edit', [App\Http\Controllers\IncidenciaC
 Route::post('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'destroy'])->name('incidencias.editIncidencia');
 
 //Incidencias admin
-Route::get('/admin/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');
-Route::get('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'showAdmin'])->name('incidencias.modIncidencia');
-Route::post('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'updateAdmin'])->name('incidencias.editInciAdmin');
-Route::get('/admin/incidencias/modificar/{id}/edit', [App\Http\Controllers\IncidenciaController::class, 'editAdmin'])->name('incidencias.editInciAdmin');
-Route::post('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'destroyAdmin'])->name('incidencias.editInciAdmin');
+Route::get('/admin/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin')->middleware('is_admin');;
+Route::get('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'showAdmin'])->name('incidencias.modIncidencia')->middleware('is_admin');;
+Route::post('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'updateAdmin'])->name('incidencias.editInciAdmin')->middleware('is_admin');;
+Route::get('/admin/incidencias/modificar/{id}/edit', [App\Http\Controllers\IncidenciaController::class, 'editAdmin'])->name('incidencias.editInciAdmin')->middleware('is_admin');;
+Route::post('/admin/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'destroyAdmin'])->name('incidencias.editInciAdmin')->middleware('is_admin');;
 
 Route::get('/email/verify/', function () {
     return view('auth.verify');

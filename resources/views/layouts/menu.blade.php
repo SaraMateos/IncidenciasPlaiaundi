@@ -35,9 +35,6 @@
                     <ul class="navbar-nav mr-auto">
                             
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">Inicio</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" href="{{ route('incidencias.verIncidencias') }}">{{ __('Ver incidencias') }}</a>
                         </li>
                         <li class="nav-item">
