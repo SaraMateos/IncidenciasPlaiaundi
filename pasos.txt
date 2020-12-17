@@ -21,6 +21,7 @@ Pasos realizados
 19- Añadido para modificar la tabla con los video de pildorasinformaticas curso laravel crud
 20- Añadido para eliminar una incidencia 
 18 19 20 tanto admin como normal
+21- Que el login redirija a la tabla en lugar de home
 
 
 
@@ -31,5 +32,3 @@ COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - MODIFICAR FORMULARIOS DE MODIFICAR
 
 - Mandar un email al crear la incidencia
-
-- Que no entre en x pagina si no ha iniciado sesión
