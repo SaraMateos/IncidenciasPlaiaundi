@@ -26,6 +26,7 @@
                             <th>DESCRIPCION</th>
                             <th>ESTADO</th>
                             <th></th>
+                            <th></th>
                         </thead>
                         <tbody>
                             @foreach ($incidencias as $incidencia)
@@ -37,7 +38,8 @@
                                 <td>{{ $incidencia->ordenador }}</td>
                                 <td>{{ $incidencia->descripcion }}</td>
                                 <td>{{ $incidencia->estado }}</td>
-                                <td><a href="#"> Modificar </a></td>
+                                <td><a href="{{ route('incidencias.editInciAdmin', $incidencia->id) }}"> Modificar </a></td>
+                                <td><a href="{{ route('incidencias.editInciAdmin', $incidencia->id) }}"> Eliminar </a></td>
                             </tr>
                             @endforeach
                         </tbody>

@@ -18,7 +18,8 @@ Pasos realizados
 16- Multiauth que redirigue a distintos homes. https://www.itsolutionstuff.com/post/laravel-8-multi-auth-authentication-tutorialexample.html
 17- Rule para el Email
 18- Añadido el poder meter datos en la tabla
-19- Añadiddo para modificar la tabla con los video de pildorasinformaticas curso laravel crud
+19- Añadido para modificar la tabla con los video de pildorasinformaticas curso laravel crud
+20- Añadido para eliminar una incidencia
 
 
 
@@ -31,5 +32,3 @@ COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - Mandar un email al crear la incidencia
 
 - Que no entre en x pagina si no ha iniciado sesión
-
-- Modificar el estado del problema

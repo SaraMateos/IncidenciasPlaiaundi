@@ -39,7 +39,7 @@
                                 <td>{{ $incidencia->descripcion }}</td>
                                 <td>{{ $incidencia->estado }}</td>
                                 <td><a href="{{ route('incidencias.editIncidencia', $incidencia->id) }}"> Modificar </a></td>
-                                <td><a href="#"> Eliminar </a></td>
+                                <td><a href="{{ route('incidencias.editIncidencia', $incidencia->id) }}"> Eliminar </a></td>
                             </tr>
                             @endforeach
                         </tbody>
