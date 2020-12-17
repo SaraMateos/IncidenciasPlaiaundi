@@ -2,12 +2,12 @@
 
 @section('content')
 <link href="/css/tabla.css" rel="stylesheet">
+<link href="/css/estiloVer.css" rel="stylesheet">
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card">
-                <div class="card-header">{{ __('Lista de incidencias') }}</div>
+            <div class="card bordes fondo">
 
                 <div class="card-body">
                     @if (session('status'))
@@ -16,7 +16,7 @@
                         </div>
                     @endif
 
-                    <table border="1" width="1000" class="listaIncidencias">
+                    <table border="1" class="listaIncidencias table table-responsive">
                         <thead>
                             <th>ID</th>
                             <th>USER_ID</th>

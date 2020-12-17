@@ -7,11 +7,10 @@
             <div class="card">
                 
             <div class="card-header">
-                <h3>Modificación de incidencia</h3>
+                <h3><b>Modificación de incidencia</b></h3>
             </div>
 
                 <div class="card-body">
-                    <!-- Mirar que hace -->
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

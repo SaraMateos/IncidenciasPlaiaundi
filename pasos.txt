@@ -32,3 +32,5 @@ COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - MODIFICAR FORMULARIOS DE MODIFICAR
 
 - Mandar un email al crear la incidencia
+
+- Hacer resposive la tabla

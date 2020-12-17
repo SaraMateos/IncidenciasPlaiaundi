@@ -1,17 +1,18 @@
 @extends('layouts.menu')
 
 @section('content')
+<link href="/css/estiloVer.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card bordes fondo">
                 
             <div class="card-header">
-                <h3>Registro de incidencia</h3>
+                <h3><b>Registro de incidencia</b></h3>
             </div>
 
                 <div class="card-body">
-                    <!-- Mirar que hace -->
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

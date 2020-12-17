@@ -23,6 +23,7 @@
                 font-style: normal;
                 font-variant: small-caps;
                 text-transform: none;
+                background-color: #eef2db;
             }
 
             img {
@@ -33,13 +34,17 @@
 				height: 140px;
 			}
 
-            .inicio {
+            .login {
 				position: absolute; 
 				left: 802px; 
 				top: 451px; 
 				width: 48px; 
 				height: 20px;
-			}
+            }
+            
+            .login:hover {
+                color: green;
+            }
 
             .registro {
 				position: absolute; 
@@ -47,7 +52,11 @@
 				top: 451px; 
 				height: 18px; 
 				width: 60px;
-			}
+            }
+            
+            .registro:hover {
+                color: green;
+            }
 
             .home {
 				position: absolute; 
@@ -55,22 +64,22 @@
 				top: 451px; 
 				height: 18px; 
 				width: 60px;
-			}
-
-            .registro:hover {
-                color: green;
+            }
+            
+            .fondo {
+                background-color: #eef2db;
             }
             
         </style>
     </head>
-    <body>
+    <body class="fondo">
         <div class="relative flex justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden sm:block">
                     @auth
-                        <a href="{{ url('/home') }}" class="home">Home</a>
+                        <a href="{{ url('/incidencias') }}" class="home">Home</a>
                     @else
-                        <a href="{{ route('login') }}" class="inicio">Login</a>
+                        <a href="{{ route('login') }}" class="login">Login</a>
 
                         @if (Route::has('register'))
                             <a href="{{ route('register') }}" class="ml-4 registro">Register</a>

@@ -1,18 +1,18 @@
 @extends('admin.menuAdmin')
 
 @section('content')
+<link href="/css/estiloVer.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
+            <div class="card bordes fondo">
                 
             <div class="card-header">
-                <h3>Modificación de incidencias</h3>
-                <h1>ADMINISTRADIR</h1>
+                <h3><b>Modificación de incidencias</b></h3>
             </div>
 
                 <div class="card-body">
-                    <!-- Mirar que hace -->
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}

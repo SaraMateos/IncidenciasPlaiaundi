@@ -1,0 +1,7 @@
+.bordes {
+    box-shadow: 8px 0px 0px 0px #48c26c, 0px 8px 0px 0px #018031, -8px 0px 0px 0px #00681b, 0px 0px 0px 8px #76ee94, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.fondo {
+    background-color: #76ee94;
+}
