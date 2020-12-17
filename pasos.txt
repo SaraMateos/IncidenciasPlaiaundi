@@ -22,8 +22,7 @@ Pasos realizados
 20- Añadido para eliminar una incidencia 
 18 19 20 tanto admin como normal
 21- Que el login redirija a la tabla en lugar de home
-
-
+22- Modificada alguna vista por encima
 
 COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - SOCIALITE tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
