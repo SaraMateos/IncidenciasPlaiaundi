@@ -49,10 +49,10 @@ class IncidenciaController extends Controller {
         //Para guardar los datos en la tabla
         $incidencia = new Incidencia;
         
-        if /*(empty($request->user_id) ||*/(empty($request->fecha) || empty($request->aula) || mepty($request->ordenador)  || empty($request->estado)) {
+        if  (empty($request->fecha) || empty($request->aula) || mepty($request->ordenador)  || empty($request->estado)) {
             $request->session()->flash('alert-danger', 'No se ha podido añadir la incidencia!');
         }  else {
-            //$incidencia->user_id = $request->user_id;
+            $incidencia->user_id = auth()->user()->id;
             $incidencia->fecha = $request->fecha;
             $incidencia->aula = $request->aula;
             $incidencia->ordenador = $request->ordenador;
