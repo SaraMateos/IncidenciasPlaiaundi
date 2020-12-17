@@ -32,7 +32,7 @@ Route::post('/incidencias/añadido', [App\Http\Controllers\IncidenciaController:
 Route::get('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'show'])->name('incidencias.modIncidencia');
 Route::post('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'update'])->name('incidencias.editIncidencia');
 Route::get('/incidencias/modificar/{id}/edit', [App\Http\Controllers\IncidenciaController::class, 'edit'])->name('incidencias.editIncidencia');;
-Route::get('/incidencias/eliminar', [App\Http\Controllers\IncidenciasController::class, 'delete'])->name('incidencias.modIncidencia');
+Route::post('/incidencias/modificar/{id}', [App\Http\Controllers\IncidenciaController::class, 'destroy'])->name('incidencias.editIncidencia');
 
 //Incidencias admin
 Route::get('/admin/verLista', [App\Http\Controllers\IncidenciaController::class, 'createListAdmin'])->name('admin.verInciAdmin');

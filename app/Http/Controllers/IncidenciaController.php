@@ -102,11 +102,12 @@ class IncidenciaController extends Controller {
     }
 
     //Funcion para eliminar una incidencia
-    public function destroy() {
+    public function destroy($id) {
 
         $incidencia = Incidencia::findOrFail($id);
         $incidencia->delete();
         return redirect("/incidencias");
+
     }
 
     //Funcion que muestra la lista de incidencias para el admin

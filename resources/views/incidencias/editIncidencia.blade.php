@@ -64,14 +64,26 @@
                             </div>
                         </div>
 
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label>Estado:</label>
+                                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" value="{{ $incidencia->estado }}">
+                            </div>
+                        </div>
+
                         <div>
                             <input type="reset" value="Reiniciar">
                             <input type="submit" value="Modificar">
-                            <input type="button" value="Borrar">
                             <br><br>
                             <a href="/incidencias"><input type="button" value="Volver"></a>
                         </div>
 
+                    </form>
+
+                    <form class="my-3" method="post" action="/incidencias/modificar/{{ $incidencia->id }}">
+                        @csrf
+
+                        <input type="submit" value="Borrar">
                     </form>
 
                 </div>
