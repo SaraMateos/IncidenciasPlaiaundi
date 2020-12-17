@@ -15,7 +15,7 @@
                     @endif
 
                     
-            You are logged in! eRES UN USER
+                    You are logged in! Eres un USER
                 </div>
             </div>
         </div>

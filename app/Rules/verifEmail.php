@@ -25,7 +25,7 @@ class verifEmail implements Rule
      */
     public function passes($attribute, $value)
     {
-        return (preg_match('/ik([A-Za-z]{2}|012108([A-Z]{3}|[a-z]{3}))@plaiaundi\.(com|net)$/' , $value));
+        return (preg_match('/ik([A-Za-z]{3}|012108([A-Z]{3}|[a-z]{3}))@plaiaundi\.(com|net)$/' , $value));
     }
 
     /**

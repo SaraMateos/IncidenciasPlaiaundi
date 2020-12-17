@@ -59,7 +59,7 @@ class IncidenciaController extends Controller {
             $incidencia->fecha = $request->fecha;
             $incidencia->aula = $request->aula;
             $incidencia->ordenador = $request->ordenador;
-            $incidencia->estado = $request->estado;
+            $incidencia->descripcion = $request->descripcion;
   
             $incidencia->save();
             if ($incidencia->save()) {
