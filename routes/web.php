@@ -22,8 +22,8 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 //Home
-Route::get('/incidencias', [App\Http\Controllers\HomeController::class, 'inicio']);
-Route::get('/admin/incidencias', [App\Http\Controllers\HomeController::class, 'adminHome'])->middleware('is_admin');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'inicio'])->name('home');
+Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.homeAdmin')->middleware('is_admin');
 
 //Incidencias usuario normal
 Route::get('/incidencias', [App\Http\Controllers\IncidenciaController::class, 'createList'])->name('incidencias.verIncidencias');

@@ -49,7 +49,7 @@
 
                         <div class="form-group row">
                             <div class="col-6">
-                            <label>¿En qué aula ocurre está el problema?</label>
+                            <label>¿En qué aula ocurre el problema?</label>
                                 <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ old('aula') }}">
                             </div>
                         </div>

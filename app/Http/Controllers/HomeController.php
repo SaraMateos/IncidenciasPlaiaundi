@@ -24,12 +24,12 @@ class HomeController extends Controller
 
     //Muestra el home de un usuario NORMAL
     public function inicio() {
-        return view('incidencias.verIncidencias');
+        return view('home');
     }
 
     //Muestra el home de un usuario ADMIN
     public function adminHome() {
-        return view('admin.verInciAdmin');
+        return view('admin.homeAdmin');
     }
 
 }
