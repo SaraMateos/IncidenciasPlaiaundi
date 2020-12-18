@@ -15,7 +15,7 @@
                         </div>
                     @endif
 
-                    <table border="1" class="listaIncidencias table table-responsive">
+                    <table class="listaIncidencias table table-responsive">
                         <thead>
                             <th>ID</th>
                             <th>USER_ID</th>

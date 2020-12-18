@@ -1,11 +1,13 @@
-@extends('admin.menuAdmin')
+@extends('layouts.app')
 
 @section('content')
+<link href="/css/tabla.css" rel="stylesheet">
+<link href="/css/estiloVer.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+        <div class="col-md-10">
+            <div class="card bordes fondo">
 
                 <div class="card-body">
                     @if (session('status'))
@@ -14,7 +16,10 @@
                         </div>
                     @endif
 
-                    {{ __('admin!') }}
+                    <p>Panel de control</p>
+
+                    <a href="{{ route('admin.verInciAdmin') }}">Ver tabla de incidencias</a>
+                    
                 </div>
             </div>
         </div>
