@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
+<link href="/css/estiloVer.css" rel="stylesheet">
+
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Verifica tu correo electronico.') }}</div>
+        <div class="col-md-10">
+            <div class="card bordes fondo">
+                <div class="card-header">
+                    <h3><b>Verifica tu correo electronico</b></h3>
+                </div>
 
                 <div class="card-body">
                     @if (session('resent'))
