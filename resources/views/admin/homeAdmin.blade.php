@@ -5,9 +5,9 @@
 <link href="/css/estiloVer.css" rel="stylesheet">
 
 <div class="container">
-    <div class="row justify-content-center align-items-center">
+    <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card bordes fondo">
+            <div class="card fondo bordes">
 
                 <div class="card-body">
                     @if (session('status'))
@@ -19,10 +19,12 @@
                     <div class="row justify-content-center">
                         <h2>Bienvenido al panel de control</h2>
                     </div>
+
                     <div class="row justify-content-center">
-                        <h4>¿Que quieres hacer?</h4>
-                    </div><br>
-                    <div class="row justify-content-center">   
+                        <h4>¿Qué quieres hacer?</h4>
+                    </div>
+
+                    <div class="row justify-content-center mt-5">   
                         <a href="{{ route('admin.verInciAdmin') }}" class="links"><img src="/images/lista.png" /><br>Ver incidencias</a>
                     </div>
                     
