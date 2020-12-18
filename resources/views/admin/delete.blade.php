@@ -19,10 +19,6 @@
                         </div>
                     @endif
 
-                    <!-- Titulo del formulario -->
-                    <h4>Modificar incidencias</h4>
-                    <h1>{{ $incidencia->ordenador }}</h1>
-
                     <!-- Muestra este mensaje en caso de que se haya añadido a la base de datos -->
                     @if(Session::has('alert-success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -44,36 +40,43 @@
                     @endif
 
                     <!-- Formulario -->
-                    <form class="my-3" method="post" action="/incidencias/eliminar/{{ $incidencia->id }}">
+                    <form class="my-3" action="/admin/incidencias/eliminar/{{ $incidencia->id }}">
                         @csrf
                         @include('incidencias.errores')
 
                         <div class="form-group row">
                             <div class="col-6">
                             <label>¿En qué aula ocurre está el problema?</label>
-                                <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ old('aula') }}">
+                                <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ $incidencia->aula }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-6">
                                 <label>¿Qué HZ tiene el ordenador?</label>
-                                <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ old('ordenador') }}">
+                                <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ $incidencia->ordenador }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Descripción el problema:</label>
-                                <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ old('descripcion') }}">
+                                <label>Descripción del problema:</label>
+                                <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ $incidencia->descripcion }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label>Estado:</label>
+                                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" value="{{ $incidencia->estado }}">
                             </div>
                         </div>
 
                         <div>
-                            <input type="reset" value="Reiniciar">
-                            <input type="submit" value="Eliminar">
-                            <br><br>
-                            <a href="/incidencias"><input type="button" value="Volver"></a>
+                            
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger">Si, eliminar</button>
+                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
                         </div>
 
                     </form>

@@ -36,8 +36,8 @@
                                 <td>{{ $incidencia->ordenador }}</td>
                                 <td>{{ $incidencia->descripcion }}</td>
                                 <td>{{ $incidencia->estado }}</td>
-                                <td><a href="{{ route('incidencias.editInciAdmin', $incidencia->id) }}"> Modificar </a></td>
-                                <td><a href="{{ route('incidencias.editInciAdmin', $incidencia->id) }}"> Eliminar </a></td>
+                                <td><a href="{{ route('admin.editInciAdmin', $incidencia->id) }}"> Modificar </a></td>
+                                <td><a href="{{ route('admin.delete', $incidencia->id) }}"> Eliminar </a></td>
                             </tr>
                             @endforeach
                         </tbody>

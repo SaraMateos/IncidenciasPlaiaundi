@@ -64,7 +64,7 @@
                         <div class="form-group row">
                             <div class="col-6">
                                 <label>Descripción el problema:</label>
-                                <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ old('descripcion') }}">
+                                <textarea type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ old('descripcion') }}"></textarea>
                             </div>
                         </div>
 

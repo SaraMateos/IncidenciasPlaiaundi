@@ -16,10 +16,9 @@
                         </div>
                     @endif
 
-                    <table border="1" class="listaIncidencias table table-responsive">
+                    <table class="listaIncidencias table table-responsive">
                         <thead>
                             <th>ID</th>
-                            <th>USER_ID</th>
                             <th>FECHA</th>
                             <th>AULA</th>
                             <th>ORDENADOR</th>
@@ -32,14 +31,13 @@
                             @foreach ($incidencias as $incidencia)
                             <tr>
                                 <td>{{ $incidencia->id }}</td>
-                                <td>{{ $incidencia->user_id }}</td>
                                 <td>{{ $incidencia->fecha }}</td>
                                 <td>{{ $incidencia->aula }}</td>
                                 <td>{{ $incidencia->ordenador }}</td>
                                 <td>{{ $incidencia->descripcion }}</td>
                                 <td>{{ $incidencia->estado }}</td>
                                 <td><a href="{{ route('incidencias.editIncidencia', $incidencia->id) }}"> Modificar </a></td>
-                                <td><a href="{{ route('incidencias.editIncidencia', $incidencia->id) }}"> Eliminar </a></td>
+                                <td><a href="{{ route('incidencias.delete', $incidencia->id) }}"> Eliminar </a></td>
                             </tr>
                             @endforeach
                         </tbody>

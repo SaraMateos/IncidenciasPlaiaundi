@@ -9,7 +9,7 @@
             <div class="card bordes fondo">
                 
             <div class="card-header">
-                <h3><b>Modificación de incidencias</b></h3>
+                <h3><b>Modificación de incidencia</b></h3>
             </div>
 
                 <div class="card-body">
@@ -40,29 +40,43 @@
                     @endif
 
                     <!-- Formulario -->
-                    <form class="my-3" method="post" action="{{url('/incidencias/añadido')}}">
+                    <form class="my-3" method="post" action="/admin/incidencias/eliminar/{{ $incidencia->id }}">
                         @csrf
                         @include('incidencias.errores')
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Nombre:</label>
-                                <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" value="{{ old('nombre') }}">
+                            <label>¿En qué aula ocurre está el problema?</label>
+                                <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ $incidencia->aula }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Email:</label>
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo electronico" value="{{ old('email') }}">
+                                <label>¿Qué HZ tiene el ordenador?</label>
+                                <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ $incidencia->ordenador }}">
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label>Descripción del problema:</label>
+                                <textarea type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="">{{ $incidencia->descripcion }}</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-6">
+                                <label>Estado:</label>
+                                <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" value="{{ $incidencia->estado }}">
                             </div>
                         </div>
 
                         <div>
-                            <input type="reset" value="Borrar">
-                            <input type="submit" value="Enviar">
+                            <input class="btnReiniciar" type="reset" value="Reiniciar">
+                            <input class="btnModificar" type="submit" value="Eliminar">
                             <br><br>
-                            <a href="/admin/incidencias"><input type="button" value="Volver"></a>
+                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
                         </div>
 
                     </form>

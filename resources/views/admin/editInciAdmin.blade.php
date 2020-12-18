@@ -61,7 +61,7 @@
                         <div class="form-group row">
                             <div class="col-6">
                                 <label>Descripción del problema:</label>
-                                <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ $incidencia->descripcion }}">
+                                <textarea type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="">{{ $incidencia->descripcion }}</textarea>
                             </div>
                         </div>
 
@@ -79,12 +79,6 @@
                             <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
                         </div>
 
-                    </form>
-
-                    <form class="my-3" method="post" action="/admin/incidencias/eliminar/{{ $incidencia->id }}">
-                        @csrf
-
-                        <input type="submit" value="Borrar">
                     </form>
 
                 </div>

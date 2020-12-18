@@ -81,12 +81,6 @@
 
                     </form>
 
-                    <form class="my-3" method="post" action="/incidencias/eliminar/{{ $incidencia->id }}">
-                        @csrf
-
-                        <input type="submit" value="Borrar">
-                    </form>
-
                 </div>
             </div>
         </div>
