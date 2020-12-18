@@ -1,31 +1,22 @@
-.listaIncidencias {
-    border: 3px solid #24943A;
-    background-color: #D4EED1;
-    width: 100%;
+table.listaIncidencias {
+    width: 89%;
+    background-color: #F0F0F0;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #24943A;
+    border-style: solid;
+    color: #000000;
     text-align: center;
 }
 
-.listaIncidencias td,  .listaIncidencias th {
-    border: 2px solid #24943A;
+table.listaIncidencias td, table.listaIncidencias th {
+    border-width: 2px;
+    border-color: #24943A;
+    border-style: solid;
+    
 }
 
-.listaIncidencias tbody td {
-    font-size: 14px;
-}
-
-.listaIncidencias thead {
-    background: #24943A;
-    border-bottom: 0px solid #444444;
-}
-
-.listaIncidencias thead th {
+table.listaIncidencias thead {
+    background-color:  #24943A;
     font-size: 16px;
-    font-weight: bold;
-    color: #F0F0F0;
-    text-align: center;
-    border-left: 2px solid #24943A;
-}
-
-.listaIncidencias thead th:first-child {
-    border-left: none;
 }

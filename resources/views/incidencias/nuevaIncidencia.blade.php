@@ -48,31 +48,30 @@
                         @include('incidencias.errores')
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-5">
                             <label>¿En qué aula ocurre el problema?</label>
                                 <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ old('aula') }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <label>¿Qué HZ tiene el ordenador?</label>
                                 <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ old('ordenador') }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-6">
-                                <label>Descripción el problema:</label>
+                            <div class="col-12">
+                                <label>Descripción del problema:</label>
                                 <textarea type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ old('descripcion') }}"></textarea>
                             </div>
                         </div>
 
                         <div>
-                            <input type="reset" value="Reiniciar">
-                            <input type="submit" value="Enviar">
-                            <br><br>
                             <a href="/incidencias"><input type="button" value="Volver"></a>
+                            <input type="reset" value="Limpiar">
+                            <input type="submit" value="Enviar">                            
                         </div>
 
                     </form>

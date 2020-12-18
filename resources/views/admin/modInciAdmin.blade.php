@@ -73,10 +73,8 @@
                         </div>
 
                         <div>
-                            <input class="btnReiniciar" type="reset" value="Reiniciar">
-                            <input class="btnModificar" type="submit" value="Eliminar">
-                            <br><br>
-                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
+                            <a href="/admin/incidencias"><input type="button" value="Cancelar"></a>
+                            <input type="submit" value="Eliminar" class>
                         </div>
 
                     </form>

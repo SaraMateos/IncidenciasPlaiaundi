@@ -15,6 +15,9 @@
         </style>
 
         <style>
+            * {
+                background-color: #FFFFE0;
+            }
             body {
                 font-size:16px;
                 letter-spacing: 2px;
@@ -23,7 +26,6 @@
                 font-style: normal;
                 font-variant: small-caps;
                 text-transform: none;
-                background-color: #eef2db;
             }
 
             img {
@@ -77,7 +79,7 @@
         </style>
     </head>
     <body class="fondo">
-        <div class="relative flex justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:pt-0">
+        <div class="relative flex justify-center min-h-screen sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden sm:block">
                     @auth

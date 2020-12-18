@@ -16,32 +16,34 @@
                         </div>
                     @endif
 
-                    <table class="listaIncidencias table table-responsive">
-                        <thead>
-                            <th>ID</th>
-                            <th>FECHA</th>
-                            <th>AULA</th>
-                            <th>ORDENADOR</th>
-                            <th>DESCRIPCION</th>
-                            <th>ESTADO</th>
-                            <th></th>
-                            <th></th>
-                        </thead>
-                        <tbody>
-                            @foreach ($incidencias as $incidencia)
-                            <tr>
-                                <td>{{ $incidencia->id }}</td>
-                                <td>{{ $incidencia->fecha }}</td>
-                                <td>{{ $incidencia->aula }}</td>
-                                <td>{{ $incidencia->ordenador }}</td>
-                                <td>{{ $incidencia->descripcion }}</td>
-                                <td>{{ $incidencia->estado }}</td>
-                                <td><a href="{{ route('admin.editInciAdmin', $incidencia->id) }}"> Modificar </a></td>
-                                <td><a href="{{ route('admin.delete', $incidencia->id) }}"> Eliminar </a></td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                    <div class="row justify-content-center">
+                        <table class="listaIncidencias table table-responsive">
+                            <thead>
+                                <th>ID</th>
+                                <th>FECHA</th>
+                                <th>AULA</th>
+                                <th>ORDENADOR</th>
+                                <th>DESCRIPCION</th>
+                                <th>ESTADO</th>
+                                <th></th>
+                                <th></th>
+                            </thead>
+                            <tbody>
+                                @foreach ($incidencias as $incidencia)
+                                <tr>
+                                    <td>{{ $incidencia->id }}</td>
+                                    <td>{{ $incidencia->fecha }}</td>
+                                    <td>{{ $incidencia->aula }}</td>
+                                    <td>{{ $incidencia->ordenador }}</td>
+                                    <td>{{ $incidencia->descripcion }}</td>
+                                    <td>{{ $incidencia->estado }}</td>
+                                    <td><a href="{{ route('admin.editInciAdmin', $incidencia->id) }}"> Modificar </a></td>
+                                    <td><a href="{{ route('admin.delete', $incidencia->id) }}"> Eliminar </a></td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
                     
                 </div>
             </div>

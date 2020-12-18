@@ -44,13 +44,14 @@
                     @endif
 
                     <!-- Formulario -->
+                    
                     <form class="my-3" method="post" action="/incidencias/eliminar/{{ $incidencia->id }}">
                         @csrf
                         @include('incidencias.errores')
 
                         <div class="form-group row">
                             <div class="col-6">
-                            <label>¿En qué aula ocurre está el problema?</label>
+                            <label>¿En qué aula está el problema?</label>
                                 <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ old('aula') }}">
                             </div>
                         </div>
@@ -70,12 +71,9 @@
                         </div>
 
                         <div>
-                            <input type="reset" value="Reiniciar">
+                            <a href="/incidencias"><input type="button" value="Cancelar"></a>
                             <input type="submit" value="Eliminar">
-                            <br><br>
-                            <a href="/incidencias"><input type="button" value="Volver"></a>
                         </div>
-
                     </form>
 
                 </div>

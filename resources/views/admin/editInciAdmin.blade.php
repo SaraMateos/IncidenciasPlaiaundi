@@ -45,38 +45,37 @@
                         @include('incidencias.errores')
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-5">
                             <label>¿En qué aula ocurre está el problema?</label>
                                 <input type="text" class="form-control" name="aula" id="aula" placeholder="Aula" value="{{ $incidencia->aula }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <label>¿Qué HZ tiene el ordenador?</label>
                                 <input type="text" class="form-control" name="ordenador" id="ordenador" placeholder="Ordenador" value="{{ $incidencia->ordenador }}">
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-12">
                                 <label>Descripción del problema:</label>
                                 <textarea type="text" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="">{{ $incidencia->descripcion }}</textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
-                            <div class="col-6">
+                            <div class="col-5">
                                 <label>Estado:</label>
                                 <input type="text" class="form-control" name="estado" id="estado" placeholder="Estado" value="{{ $incidencia->estado }}">
                             </div>
                         </div>
 
                         <div>
-                            <input class="btnReiniciar" type="reset" value="Reiniciar">
-                            <input class="btnModificar" type="submit" value="Modificar">
-                            <br><br>
-                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
+                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Cancelar"></a>
+                            <input class="btnReiniciar" type="reset" value="Limpiar">
+                            <input class="btnModificar" type="submit" value="Modificar>
                         </div>
 
                     </form>
