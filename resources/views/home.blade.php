@@ -24,9 +24,9 @@
                     </div>
 
                     <div class="row justify-content-center mt-4">   
-                        <a href="{{ route('incidencias.verIncidencias') }}" class="derecha mr-5 links"><img src="/images/anadir.png" /><br>Crear incidencia</a>
+                        <a href="{{ route('incidencias.nuevaIncidencia') }}" class="derecha mr-5 links"><img src="/images/anadir.png" /><br>Crear incidencia</a>
 
-                        <a href="{{ route('incidencias.nuevaIncidencia') }}" class="izquierda ml-5 links"><img src="/images/lista.png" /><br>Ver incidencias</a>
+                        <a href="{{ route('incidencias.verIncidencias') }}" class="izquierda ml-5 links"><img src="/images/lista.png" /><br>Ver incidencias</a>
                     </div>
                 </div>
             </div>

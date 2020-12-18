@@ -73,10 +73,10 @@
                         </div>
 
                         <div>
-                            <input type="reset" value="Reiniciar">
-                            <input type="submit" value="Modificar">
+                            <input class="btnReiniciar" type="reset" value="Reiniciar">
+                            <input class="btnModificar" type="submit" value="Modificar">
                             <br><br>
-                            <a href="/admin/incidencias"><input type="button" value="Volver"></a>
+                            <a href="/admin/incidencias"><input class="btnVolver" type="button" value="Volver"></a>
                         </div>
 
                     </form>
