@@ -19,9 +19,6 @@
                         </div>
                     @endif
 
-                    <!-- Titulo del formulario -->
-                    <h4>Modificar incidencias</h4>
-
                     <!-- Muestra este mensaje en caso de que se haya añadido a la base de datos -->
                     @if(Session::has('alert-success'))
                         <div class="alert alert-success alert-dismissible fade show" role="alert">
