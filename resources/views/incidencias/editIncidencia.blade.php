@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bordes fondo">
+            <div class="card fondo">
                 
             <div class="card-header">
                 <h3><b>Modificación de incidencia</b></h3>
@@ -60,7 +60,7 @@
 
                         <div class="form-group row">
                             <div class="col-6">
-                                <label>Descripción el problema:</label>
+                                <label>Descripción del problema:</label>
                                 <input type="textarea" class="form-control" name="descripcion" id="descripcion" placeholder="Descripción" value="{{ $incidencia->descripcion }}">
                             </div>
                         </div>
@@ -81,7 +81,7 @@
 
                     </form>
 
-                    <form class="my-3" method="post" action="/incidencias/modificar/{{ $incidencia->id }}">
+                    <form class="my-3" method="post" action="/incidencias/eliminar/{{ $incidencia->id }}">
                         @csrf
 
                         <input type="submit" value="Borrar">

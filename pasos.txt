@@ -24,6 +24,9 @@ Pasos realizados
 21- Que el login redirija a la tabla en lugar de home
 22- Modificada alguna vista por encima
 
+
+
+
 COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - SOCIALITE tutorial seguido de socialite: https://medium.com/@oscarricardosan/login-con-google-usando-socialite-en-laravel-5-3-326fefbf6096
         Paso de crear el proyecto
@@ -31,5 +34,3 @@ COSAS QUE FALTAN POR HACER!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 - MODIFICAR FORMULARIOS DE MODIFICAR
 
 - Mandar un email al crear la incidencia
-
-- Hacer resposive la tabla

@@ -3,5 +3,18 @@
 }
 
 .fondo {
-    background-color: #76ee94;
+    background-color: #b4f3b4;
+}
+
+.links {
+    text-decoration: none;
+    color: brown;
+}
+
+.derecha {
+    float: right;
+}
+
+.izquieda {
+    float: left;
 }

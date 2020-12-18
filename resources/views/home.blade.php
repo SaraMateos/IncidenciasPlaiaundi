@@ -7,7 +7,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-10">
-            <div class="card bordes fondo">
+            <div class="card">
 
                 <div class="card-body">
                     @if (session('status'))
@@ -16,13 +16,13 @@
                         </div>
                     @endif
 
-                    <p>Panel de control</p>
+                    <h2>Bienvenido al panel de control</h2>
+                    <br>
 
-                    <a href="{{ route('incidencias.verIncidencias') }}">Ver tabla de incidencias</a>
+                    <a href="{{ route('incidencias.verIncidencias') }}" class="derecha mr-5"><img src="/images/anadir.png" /><br>Crear incidencia</a>
 
-                    <a href="{{ route('incidencias.verIncidencias') }}">Crear una nueva incidencia</a>
+                    <a href="{{ route('incidencias.nuevaIncidencia') }}" class="izquierda ml-5"><img src="/images/lista.png" /><br>Ver incidencias</a>
 
-                    {{ __('Usuario!') }}
                 </div>
             </div>
         </div>

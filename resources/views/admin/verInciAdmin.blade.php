@@ -2,6 +2,7 @@
 
 @section('content')
 <link href="/css/tabla.css" rel="stylesheet">
+<link href="/css/estiloVer.css" rel="stylesheet">
 
 <div class="container">
     <div class="row justify-content-center">
@@ -18,7 +19,6 @@
                     <table class="listaIncidencias table table-responsive">
                         <thead>
                             <th>ID</th>
-                            <th>USER_ID</th>
                             <th>FECHA</th>
                             <th>AULA</th>
                             <th>ORDENADOR</th>
@@ -31,7 +31,6 @@
                             @foreach ($incidencias as $incidencia)
                             <tr>
                                 <td>{{ $incidencia->id }}</td>
-                                <td>{{ $incidencia->user_id }}</td>
                                 <td>{{ $incidencia->fecha }}</td>
                                 <td>{{ $incidencia->aula }}</td>
                                 <td>{{ $incidencia->ordenador }}</td>

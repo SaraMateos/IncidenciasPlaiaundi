@@ -16,9 +16,11 @@
                         </div>
                     @endif
 
-                    <p>Panel de control</p>
+                    <h2>Bienvenido al panel de control</h2>
+                    <p>¿Que quieres hacer?</p>
+                    <br>
 
-                    <a href="{{ route('admin.verInciAdmin') }}">Ver tabla de incidencias</a>
+                    <a href="{{ route('admin.verInciAdmin') }}" class="links"><img src="/images/lista.png" /><br>Ver incidencias</a>
                     
                 </div>
             </div>
@@ -26,3 +28,8 @@
     </div>
 </div>
 @endsection
+
+<!--verde 42D292
+hoja E4E6EE
+amarillo FFD255
+morado 63316D-->
