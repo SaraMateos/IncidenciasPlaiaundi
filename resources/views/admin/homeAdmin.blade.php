@@ -24,7 +24,7 @@
                         <h4>¿Qué quieres hacer?</h4>
                     </div>
 
-                    <div class="row justify-content-center mt-5">   
+                    <div class="row justify-content-center mt-4">   
                         <a href="{{ route('admin.verInciAdmin') }}" class="links"><img src="/images/lista.png" /><br>Ver incidencias</a>
                     </div>
                     
