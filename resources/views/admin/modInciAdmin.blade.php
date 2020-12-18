@@ -6,7 +6,7 @@
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card fondo">
+            <div class="card bordes fondo">
                 
             <div class="card-header">
                 <h3><b>Modificación de incidencias</b></h3>
