@@ -25,7 +25,7 @@ class verifEmail implements Rule
      */
     public function passes($attribute, $value)
     {
-        return (preg_match('/ik([A-Za-z]{3}|012108([A-Z]{3}|[a-z]{3}))@plaiaundi\.(com|net)$/' , $value));
+        return (preg_match('/([a-zA-Z]+)@plaiaundi\.(com|net)$/' , $value));
     }
 
     /**
@@ -35,6 +35,6 @@ class verifEmail implements Rule
      */
     public function message()
     {
-        return 'El formato del :attribute no es valido. Debe de ser ikaXX@plaiaundi.net/.com o ik012108XX@plaiaundi.net/.com';
+        return 'El formato del :attribute no es valido. Debe de ser ...@plaiaundi.net/.com o ..@plaiaundi.net/.com';
     }
 }

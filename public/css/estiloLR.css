@@ -18,7 +18,7 @@
   
 .login-form-font-header span {
     margin-top: 10px;
-    color: #007C9B;
+    color: #24943a;
 }
   
 .login-from-row {
@@ -39,7 +39,7 @@
 
 .or-seperator i {
     padding: 0 10px;
-    background:  #eef2db;;
+    background:  #ffffe0;
     position: relative;
     top: -11px;
     z-index: 1;

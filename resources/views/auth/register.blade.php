@@ -69,7 +69,7 @@
 
                 <div class="form-group row mb-0">
                     <div class="col-md-12 login-from-boton">
-                        <button type="submit" class="btn btn-primary"> {{ __('Registrarse') }} </button>
+                        <button type="submit" class="btn btn-success"> {{ __('Registrarse') }} </button>
                     </div>
                 </div>
             </form>

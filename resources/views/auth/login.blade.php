@@ -67,7 +67,7 @@
 
                 <div class="form-group row mb-0">
                     <div class="col-md-12 login-from-boton">
-                        <button type="submit" class="btn btn-primary pull-right"> {{ __('Iniciar Sesión') }} </button>
+                        <button type="submit" class="btn btn-success pull-right"> {{ __('Iniciar Sesión') }} </button>
                         @if (Route::has('password.request'))
                             <a class="btn btn-link" href="{{ route('password.request') }}"> {{ __('Has olvidado la contraseña?') }} </a>
                         @endif

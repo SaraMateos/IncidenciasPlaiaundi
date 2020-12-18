@@ -30,10 +30,8 @@
 
             img {
 				position: absolute;
-				left: 680px;
+				left: 560px;
 				top: 280px;
-				width: 460px;
-				height: 140px;
 			}
 
             .login {
@@ -72,13 +70,9 @@
                 color: green;
             }
             
-            .fondo {
-                background-color: #eef2db;
-            }
-            
         </style>
     </head>
-    <body class="fondo">
+    <body>
         <div class="relative flex justify-center min-h-screen sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden sm:block">
