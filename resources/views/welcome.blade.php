@@ -16,7 +16,7 @@
 
         <style>
             * {
-                background-color: #FFFFE0;
+                background-color: #f8fafc;
             }
             body {
                 font-size:16px;
